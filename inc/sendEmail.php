@@ -1,13 +1,13 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'haddad@riseup.net';
+$siteOwnersEmail = 'neptu39701@gmail.com';
 
 
 if($_POST) {
 
-   $name = trim(stripslashes($_POST['contactName']));
-   $email = trim(stripslashes($_POST['contactEmail']));
+   $name = trim(stripslashes($_POST['name']));
+   $email = trim(stripslashes($_POST['email']));
    $subject = trim(stripslashes($_POST['contactSubject']));
    $contact_message = trim(stripslashes($_POST['contactMessage']));
 
@@ -36,7 +36,7 @@ if($_POST) {
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
-
+die();
    // Email Headers
 	$headers = "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
